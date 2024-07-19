@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Tree Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="family-tree" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <ul id="tree">
+      <!-- nodes will be added here -->
+      <li>
+        <img src="grandfather.jpg" alt="Grandfather" />
+        <span>Grandfather</span>
+      </li>
+      <li>
+        <img src="grandmother.jpg" alt="Grandmother" />
+        <span>Grandmother</span>
+      </li>
+      <li>
+        <img src="father.jpg" alt="Father" />
+        <span>Father</span>
+      </li>
+      <li>
+        <img src="mother.jpg" alt="Mother" />
+        <span>Mother</span>
+      </li>
+      <li>
+        <img src="brother.jpg" alt="Brother" />
+        <span>Brother</span>
+      </li>
+      <li>
+        <img src="sister.jpg" alt="Sister" />
+        <span>Sister</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- modal for adding new nodes -->
+  <div id="add-node-modal" style="display: none;">
+    <input type="file" id="node-image" />
+    <input type="text" id="node-title" placeholder="Node title" />
+    <button id="add-node-btn">Add Node</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
