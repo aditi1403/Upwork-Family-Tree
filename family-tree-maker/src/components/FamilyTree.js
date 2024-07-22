@@ -16,7 +16,9 @@ const FamilyTree = ({ data }) => {
 
     const treeLayout = d3.tree().size([700, 500]);
 
-    const root = d3.hierarchy(data[0]);
+    const root = d3.stratify()
+                    .id(d => d.name)
+                    .parentId(d => d.parent)(data);
 
     treeLayout(root);
 

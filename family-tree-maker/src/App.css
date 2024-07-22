@@ -37,7 +37,7 @@
   }
 } */
 
-.App {
+/* .App {
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -78,4 +78,27 @@ button:hover {
 svg {
   margin-top: 20px;
   border: 1px solid #ccc;
+} */
+
+.App {
+  text-align: center;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 10px;
+}
+
+svg {
+  display: block;
+  margin: auto;
+  background-color: #f9f9f9;
 }
