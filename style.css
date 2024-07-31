@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#family-tree-container {
+  width: 800px;
+  height: 800px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow: auto;
+}
+
+#input-form {
+  margin-top: 40px;
+}
+
+#input-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#input-form input[type="text"], #input-form select {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#input-form button[type="button"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#input-form button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+.node.selected circle {
+  stroke: orange;
+  stroke-width: 5px;
+}

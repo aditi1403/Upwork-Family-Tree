@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Family Tree Maker</h1>
+    <div id="family-tree-container"></div>
+    <div id="input-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+        <label for="relationship">Relationship:</label>
+        <select id="relationship" name="relationship">
+            <option value="parent">Parent</option>
+            <option value="child">Child</option>
+            <option value="sibling">Sibling</option>
+            <option value="spouse">Spouse</option>
+        </select><br><br>
+        <button id="add-member">Add Member</button>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
