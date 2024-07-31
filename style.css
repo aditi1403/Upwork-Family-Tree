@@ -3,8 +3,8 @@ body {
 }
 
 #family-tree-container {
-  width: 800px;
-  height: 800px;
+  width: 1800px;
+  height: 1800px;
   border: 1px solid #ccc;
   padding: 10px;
   overflow: auto;

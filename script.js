@@ -50,21 +50,16 @@ function updateTree() {
   const container = d3.select("#family-tree-container");
   const width = container.node().clientWidth;
   const height = container.node().clientHeight;
-  const margin = { top: 20, right: 90, bottom: 30, left: 90 };
-  // const margin = { top: 20, right: 90, bottom: 30, left: 90 };
-  // const innerWidth = width - margin.left - margin.right;
-  // const innerHeight = height - margin.top - margin.bottom;
-  
+  const margin = { top: 100, right: 1000, bottom: 100, left: 100};
+
   const svg = container.append("svg")
       .attr("width", width)
       .attr("height", height)
-      // .attr("viewBox", [-innerWidth / 2, -innerHeight / 2, width, height])
-      .style("overflow", "auto");
+      .style("overflow", "scroll");
 
   const root = d3.hierarchy(familyData);
 
-  const treeLayout = d3.tree().size([innerHeight, innerWidth - 160]);
-
+  const treeLayout = d3.tree().nodeSize([50, 200]);
   treeLayout(root);
 
   const nodes = root.descendants();
